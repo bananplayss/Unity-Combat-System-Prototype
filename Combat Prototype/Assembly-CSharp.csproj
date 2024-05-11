@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BlockItem.cs" />
+    <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\InputHandler.cs" />
     <Compile Include="Assets\PlayerInputAction.cs" />
     <Compile Include="Assets\DebugUI.cs" />

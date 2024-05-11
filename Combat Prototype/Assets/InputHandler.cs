@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -102,8 +103,8 @@ public class InputHandler : MonoBehaviour
 	private void FixedUpdate() {
 		inputVector = playerInputAction.InputActions.Movement.ReadValue<Vector2>();
 		inputVector.Normalize();
-		float speed = 20f; //I wouldnt modify this one
-		rig.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * speed *currentMovementSpeed, ForceMode.Force);
+		Vector3 moveDir = new Vector3(inputVector.x, 0, inputVector.y);
+		transform.position += moveDir * currentMovementSpeed * Time.deltaTime;
 	}
 
 	private void Unblock() {

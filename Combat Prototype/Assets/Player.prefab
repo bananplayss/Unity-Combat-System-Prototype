@@ -183,10 +183,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3245403162774874133}
-  - component: {fileID: 4348997743885988698}
   m_Layer: 0
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,27 +207,6 @@ Transform:
   - {fileID: 8645233453910208110}
   m_Father: {fileID: 8540500585536177947}
   m_LocalEulerAnglesHint: {x: -53.649, y: 351.365, z: -476.25598}
---- !u!65 &4348997743885988698
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3204845472684760643}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5975338, y: 0.25494948, z: 1.041441}
-  m_Center: {x: -0.40228304, y: -0.041710585, z: 0.8789091}
 --- !u!1 &3304945113638887504
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +409,7 @@ MonoBehaviour:
   leftHandPos: {fileID: 4276240200659065951}
   enemy: {fileID: 0}
   dashParticle: {fileID: 0}
+  swordCol: {fileID: 0}
 --- !u!54 &6543584624451857338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -493,7 +472,7 @@ GameObject:
   - component: {fileID: 4815411319134147564}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,7 +577,7 @@ GameObject:
   - component: {fileID: 345707537845388691}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
